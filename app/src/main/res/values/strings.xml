@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">God Child</string>
+
+    <string name="tamil_photos">புகைப்படம்</string>
+    <string name="english_photos">Photos</string>
+    <string name="tamil_alarm">அலாரம்</string>
+    <string name="english_alarm">Alarm</string>
+    <string name="tamil_music">இசை</string>
+    <string name="english_music">Music</string>
+
+    <string name="life_header_english">Life</string>
+    <string name="life_body_english">
+        \n
+        Birth Day : 01-December-1918\n
+        Samadhi Day : 20-February-2001\n
+        Birth Place : Nardhara, Uttar Pradesh, India\n
+        Lived  in : Tiruvannamalai, Tamilnadu, India
+    </string>
+    <string name="life_header_tamil">வாழ்க்கை</string>
+    <string name="life_body_tamil">
+        \n
+        பிறந்த தினம் : 01-December-1918\n
+        சமாதி தினம்: 20-February-2001\n
+        பிறந்த ஊர் : நர்தரா, உத்திர பிரதேசம்\n
+        வசித்தது : திருவண்ணாமலை, தமிழ்நாடு
+    </string>
+
+    <string name="teaching_header_tamil">தத்துவம்</string>
+    <string name="teaching_header_english">Teachings</string>
+    <string name="teaching_body_tamil">
+        \n
+        \u25A0  இறைவனை மறவாதிருங்கள்\n
+        \u25A0  கடவுளின் கைகளில் கருவியாக இருங்கள்\n
+        \u25A0  உதவுங்கள்\n\n
+ </string>
+    <string name="teaching_body_sub_tamil">
+        "யோகி ராம்சுரத்குமார்" நாமத்தை  மறக்காமல் இருக்க தயவுசெய்து இங்கே கிளிக் செய்யவும்
+    </string>
+    <string name="teaching_body_english">
+        \n
+        \u25A0  Remember GOD\n
+        \u25A0  Be an instrument in the hands of GOD\n
+        \u25A0  Help\n\n
+    </string>
+    <string name="teaching_body_sub_english">
+        Please click here to set
+        “Yogi Ramsuratkumar “ nama as reminder
+    </string>
+
+
+    <string name="dharma_header_tamil">தர்மநெறி</string>
+    <string name="dharma_header_english">Dharma</string>
+    <string name="dharma_body_tamil">
+        \n
+        \u25A0  கடவுள் நினைவில் இருப்பதே தர்மம்\n
+        \u25A0  இறைவன் (தந்தை) மட்டுமேநிலைத்து இருக்கிறார்,வேறொன்றும் இல்லை, வேறெதுவும் இல்லை\n
+        \u25A0  நம்பிக்கை கடவுளைவிட உயர்ந்தது. நம்பிக்கையைவிட உயர்ந்தது ஏதுமில்லை\n
+        \u25A0  "யோகி ராம்சுரத்குமார்" நாமத்தை சொல்லுபவர்களுக்கு என் தந்தை (கடவுள்) உடனடியாக உதவி செய்வார்\n
+    </string>
+    <string name="dharma_body_english">
+        \n
+        \u25A0  Remembering GOD is Dharma\n
+        \u25A0  GOD (Father) Only Exists, Nothing Else, Nobody Else\n
+        \u25A0  FAITH is Greater than GOD. Nothing is Greater than FAITH\n
+        \u25A0  Whoever Call “ Yogi Ramsuratkumar” My FATHER will rush to help\n
+    </string>
+
+    <string name="initiation_header_tamil">தீட்சை</string>
+    <string name="initiation_header_english">Initiation</string>
+    <string name="initiation_body_tamil">
+        \u25A0  பகவான் யோகி ராம்சுரத்குமார் "யோகி ராம்சுரத்குமார்" நாமத்தை உச்சரிப்பதை கேட்க இந்த பொத்தானை கிளிக் செய்யவும்.\n\n
+        \u25A0  "யோகி ராம்சுரத்குமார்" நாமத்தை தொடர்ந்து கேட்க இந்த பொத்தானை அழுத்தவும்
+    </string>
+    <string name="initiation_body_english">
+        \u25A0  Please click this button to hear Bhagwan YogiRamsuratkumar chanting the “ Yogi Ramsuratkumar” nama\n\n
+        \u25A0  Please click this button to hear “ Yogi Ramsuratkumar” nama Continuously
+    </string>
+
+    <string name="dharshan_header_tamil"> தரிசனம்</string>
+    <string name="dharshan_header_english">Dharshan</string>
+    <string name="dharshan_body_tamil">
+        <b>பகவான் யோகி ராம்சுரத்குமாரின் திவ்யதரிசனம்,
+        யோகி ராம்சுரத்குமார் ஆஸ்ரமம்</b>
+        1833/1 அக்ரஹார கொல்லை,  திருவண்ணாமலை- 606 603\n
+
+        யோகி ராம்சுரத்குமார்  பிரதிஷ்டை செய்த சிலை சமாதி மந்திர்\n
+
+        <b>பொறுப்பு:</b> மா தேவகிஜி யோகி ராம்சுரத்குமார் டிரஸ்ட்\n
+        <b>போன்:</b> +91 4175 237567\n
+        <b>வலைதளம்:</b> https://yogiramsuratkumarashram.org\n
+
+        யோகி ராம்சுரத்குமார் மந்த்ராலயம்
+        காணிமாடம், அஞ்சுகிராமம், தமிழ்நாடு-629401\n
+        யோகி ராம்சுரத்குமார் ஆணைப்படி கட்டப்பட்ட முதல் கோவில்\n
+        <b>பொறுப்பு:</b> நிறுவனர் ஸ்ரீ பொன் காமராஜ் ஸ்வாமிஜி\n
+        <b>போன்:</b> +91 88257 99951\n
+        <b>வலைதளம்:</b>https://www.yogiramsuratkumarmantralayam.com
+    </string>
+    <string name="dharshan_body_english">
+        <b>Bhagawan Yogi Ramsuratkumar Divya Dharshans at,
+        Yogi Ramsuratkumar Ashram,</b>\n
+        <b>Address:</b> 1833/1, Agrahara kollai, Chengam Road, Tiruvannamalai,Tamil Nadu 606603, India\n
+        Yogi Ramsuratkumar consecrated silaroopa (idol) and HIS Samadhi is situated\n
+        <b>Foster:</b> Ma Devakiji and Yogi Ramsuratkumar Trust\n
+        <b>Phone :</b> +91 4175 237567\n
+        <b>Website:</b>https://yogiramsuratkumarashram.org\n
+        Yogi Ramsuratkumar Manthalayam,\n
+        <b>Address:</b> Kanimadam,Anjugramam, Tamil Nadu 629401, India
+        First Temple for Yogi Ramsuratkumar as instructed by HIM\n
+        <b>Foster:</b> Founder Sri PonKamaraj Swamiji\n
+        <b>Phone :</b> +91 88257 99951\n
+        <b>Website:</b>https://www.yogiramsuratkumarmantralayam.com
+    </string>
+
+    <string name="empty_text">""</string>
+    <string name="timePeriod">AM</string>
+    <string name="AlarmDismiss">Dismiss</string>
+    <string name="DismissAlarmText">Dismiss Alarm</string>
+    <string name="SetAlarmText">Set Alarm</string>
+    <string name="AlarmInterval">Interval</string>
+    <string name="pm">PM</string>
+    <string name="_10_00">10:00</string>
+    <string name="ending_time">End Time</string>
+    <string name="am">AM</string>
+    <string name="_08_00">08:00</string>
+    <string name="starting_time">Start Time</string>
+    <string name="hours">Hrs</string>
+
+    <string-array name="timePeriod">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+
+</resources>

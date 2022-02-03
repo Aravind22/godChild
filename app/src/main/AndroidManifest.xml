@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.godapp.godapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GodApp">
+        <activity
+            android:name="com.godapp.godapp.RingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.godapp.godapp.AlarmNew"
+            android:exported="false" />
+
+        <activity
+            android:name=".DharshanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".InitiationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DharmaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TeachingActivity"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.godapp.godapp.AlarmActivity$AlarmReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver android:name="com.godapp.godapp.AlarmNew$AlarmReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <receiver android:name="com.godapp.godapp.NotificationDismissal"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <activity
+            android:name=".GalleryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LifeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MusicActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.godapp.godapp.AlarmActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
