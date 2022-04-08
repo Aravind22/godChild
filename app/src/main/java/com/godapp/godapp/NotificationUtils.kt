@@ -18,6 +18,7 @@ import android.widget.Toast
 import androidx.core.app.NotificationCompat
 import com.godapp.godapp.BaseActivity.ringToneVar
 import java.util.*
+import java.util.Calendar.*
 import kotlin.concurrent.timerTask
 
 
@@ -104,6 +105,25 @@ class  NotificationUtils(base: Context) : ContextWrapper(base) {
         val endAlarm = sharedPreferences.getString("endAlarm", null);
         val endAlarmMin = sharedPreferences.getString("endAlarmMin", null);
 
+        val sunday = sharedPreferences.getString("sunday","1")
+        val monday = sharedPreferences.getString("monday","1")
+        val tuesday = sharedPreferences.getString("tuesday","1")
+        val wednesday = sharedPreferences.getString("wednesday","1")
+        val thursday = sharedPreferences.getString("thursday","1")
+        val friday = sharedPreferences.getString("friday","1")
+        val saturday = sharedPreferences.getString("saturday","1")
+
+        val daysArray = arrayOf(
+            MONDAY,
+            TUESDAY,
+            WEDNESDAY,
+            TUESDAY,
+            FRIDAY,
+            SATURDAY,
+            SUNDAY
+        )
+
+
         val intent = Intent(this, com.godapp.godapp.AlarmNew.AlarmReceiver::class.java);
         pendingIntent = PendingIntent.getBroadcast(this, 0, intent, 0);
 
@@ -156,6 +176,20 @@ class  NotificationUtils(base: Context) : ContextWrapper(base) {
                     )
                     val toastMessage = "Next Alarm set at " + setNextAlarm.toString() + ":" + currentAlarmMin.toString()
                     Toast.makeText(this, toastMessage, Toast.LENGTH_SHORT).show()
+                }
+
+                var i = 0
+                var setRepeat =0
+
+
+                when(Calendar.DAY_OF_WEEK){
+                    SUNDAY -> if(monday != "1") setRepeat = 1
+                    MONDAY -> if(tuesday != "1") setRepeat = 1
+                    TUESDAY -> if(wednesday != "1") setRepeat = 1
+                    WEDNESDAY -> if(thursday != "1") setRepeat = 1
+                    THURSDAY -> if(friday != "1") setRepeat = 1
+                    FRIDAY -> if(saturday != "1") setRepeat = 1
+                    SATURDAY -> if(sunday != "1") setRepeat = 1
                 }
             }
         }

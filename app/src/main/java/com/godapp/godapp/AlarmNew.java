@@ -10,6 +10,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -26,6 +27,7 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import com.dpro.widgets.WeekdaysPicker;
 import com.godapp.godapp.R;
 
 import java.util.ArrayList;
@@ -48,6 +50,13 @@ public class AlarmNew extends AppCompatActivity {
         final String[] intervals = {"1","2","3","4","6","8","12"};
         final String[] startTimeAM_PM = new String[1];
         final String[] endTimeAM_PM = new String[1];
+        List<Integer> selectedDays = new ArrayList<>();
+        selectedDays.add(2);
+        selectedDays.add(3);
+        selectedDays.add(4);
+        selectedDays.add(5);
+        selectedDays.add(6);
+
 
         TextView startTime = (TextView) findViewById(R.id.startTimeEditText);
         TextView endTime = (TextView) findViewById(R.id.endTimeEditText);
@@ -56,6 +65,8 @@ public class AlarmNew extends AppCompatActivity {
         TextView currAlarmTxt = (TextView)findViewById(R.id.currentAlarmTxt);
         TextView startTimeIndicator = (TextView)findViewById(R.id.startTimeIndicator);
         TextView endTimeIndicator = (TextView)findViewById(R.id.endTimeIndicator);
+        WeekdaysPicker widget = (WeekdaysPicker) findViewById(R.id.weekdaysPicker);
+        widget.setSelectedDays(selectedDays);
 
         SharedPreferences alarmSharedPref = getApplicationContext().getSharedPreferences("myAlarm", MODE_PRIVATE);
         SharedPreferences.Editor editor = alarmSharedPref.edit();
@@ -188,15 +199,39 @@ public class AlarmNew extends AppCompatActivity {
                 if(cal_alarm.before(cal_now)){
                     cal_alarm.add(Calendar.DATE,1);
                 }
-                Intent intent = new Intent(AlarmNew.this, AlarmReceiver.class);
-                pendingIntent[0] = PendingIntent.getBroadcast(AlarmNew.this, 0, intent, 0);
-                alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal_alarm.getTimeInMillis() ,pendingIntent[0]);
+//                Intent intent = new Intent(AlarmNew.this, AlarmReceiver.class);
+//                pendingIntent[0] = PendingIntent.getBroadcast(AlarmNew.this, 0, intent, 0);
+//                alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal_alarm.getTimeInMillis() ,pendingIntent[0]);
+
+                List<String> repeatingDays = widget.getSelectedDaysText();
+                for(int i =0;i<repeatingDays.size();i++){
+                    Log.i("dayss", String.valueOf(repeatingDays.get(i)));
+                    switch (repeatingDays.get(i)){
+                        case "Sunday":
+                            editor.putString("sunday","0");
+                        case "Monday":
+                            editor.putString("monday", "0");
+                        case "Tuesday":
+                            editor.putString("tuesday", "0");
+                        case "Wednesday":
+                            editor.putString("wednesday", "0");
+                        case "Thursday":
+                            editor.putString("thursday", "0");
+                        case "Friday":
+                            editor.putString("friday", "0");
+                        case "Saturday":
+                            editor.putString("saturday", "0");
+                    }
+                }
+
 
                 editor.putString("currentAlarm", String.valueOf(startAlarmHour[0]));
+                editor.putString("firstAlarmHour", String.valueOf(startAlarmHour[0]));
                 editor.putString("startAlarm", String.valueOf(startAlarmHour[0]));
                 editor.putString("endAlarm", String.valueOf(endAlarmHour[0]));
                 editor.putString("endAlarmMin", String.valueOf(endAlarmMinute[0]));
                 editor.putString("currentAlarmMin", String.valueOf(startAlarmMinute[0]));
+                editor.putString("firstAlarmMin", String.valueOf(startAlarmMinute[0]));
                 editor.putString("alarmInterval", String.valueOf(Selectedinterval[0]));
                 editor.putString("startTimeIndicator", String.valueOf(startTimeAM_PM[0]));
                 editor.putString("endTimeIndicator", String.valueOf(endTimeAM_PM[0]));

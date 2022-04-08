@@ -60,8 +60,11 @@ dependencies {
     implementation "androidx.core:core-ktx:1.7.0"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.github.DavidProdinger:weekdays-selector:1.1.1'
 }
 repositories {
     google()
     maven { url "https://plugins.gradle.org/m2/" }
+    maven { url 'https://jitpack.io' }
+
 }
